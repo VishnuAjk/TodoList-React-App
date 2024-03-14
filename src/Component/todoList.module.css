@@ -1,0 +1,101 @@
+
+/* Body of toDo app */
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+   
+}
+
+h1 {
+    color: black;
+    font-size: 24px;
+}
+
+/* Input Section */
+.inputSection{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.todoInput{
+    width: 92%;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.todoInput:focus{
+    background-color: #DADDB1;
+}
+.todoInput::placeholder{
+    font-family: monospace;
+}
+
+/* Buttons section */
+button {
+    background-color: #1F4172;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+   
+}
+
+/* To dO List Section */
+
+.todoListConatiner{
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.todoListConatiner::-webkit-scrollbar {
+    width: 0; /* Hide the vertical scrollbar */
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+li:last-child {
+    border: none;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.filterButtons{
+    margin-top: 10px;
+    
+}
+
+.updateBtn{
+    background-color: rgb(228, 228, 93);
+}

@@ -1,0 +1,13 @@
+.App{
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #662549, #4B527E);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
